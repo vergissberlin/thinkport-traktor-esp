@@ -4,7 +4,7 @@
 #include <Adafruit_SSD1306.h>
 #include <FastLED.h>
 #include <PubSubClient.h>
-//#include "ServoEasing.hpp"
+// #include "ServoEasing.hpp"
 #include <Wire.h>
 #include <WiFiManager.h>
 
@@ -32,6 +32,9 @@ const char *angle;
 const char *led_0 = "black";
 const char *led_1 = "black";
 const char *led_2 = "black";
+const char *led_3 = "black";
+const char *led_4 = "black";
+const char *led_5 = "black";
 const char *display_0;
 const char *display_1;
 const char *display_2;
@@ -105,6 +108,9 @@ void mqttCallback(char *topic, byte *payload, unsigned int length)
     led_0 = data["led"][0];
     led_1 = data["led"][1];
     led_2 = data["led"][2];
+    led_3 = data["led"][3];
+    led_4 = data["led"][4];
+    led_5 = data["led"][5];
     display_0 = data["display"][0];
     display_1 = data["display"][1];
     display_2 = data["display"][2];
