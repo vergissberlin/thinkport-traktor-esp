@@ -1,0 +1,19 @@
+#pragma once
+
+#define MQTT_SERVER ""
+#define MQTT_PORT 1883
+#define MQTT_USER ""
+#define MQTT_PASSWORD ""
+#define MQTT_TOPIC "/bayertractor"
+#define MQTT_CLIENTID "BayerTractor"
+
+#define LED_NUM 3
+#define LED_BRIGHTNESS 255
+#define LED_DATA 2
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define SCREEN_ADDRESS 0x2C // our LED has 0x3C
+#define OLED_RESET 0        // Reset pin # (or -1 if sharing Arduino reset pin)
+
+#define SERVO_PIN 14
